@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400);
+
+// Variables
+@text-primary: #3e3b39;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: -webkit-linear-gradient(290deg, #515C69 10%, #374B61 80%);
+    background-image: linear-gradient(160deg, #515C69 10%, #374B61 80%);
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+body {
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+}
+
+/* Header
+******************************************/
+
+header {
+    overflow: hidden;
+}
+
+.header-left > h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    display: inline-block;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.header-right {
+    margin-top: 45px;
+}
+
+.header-right > a {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    -webkit-transition: opacity .2s ease-in;
+    transition: opacity .2s ease-in;
+    letter-spacing: .75px;
+    font-size: 12px;
+}
+
+.header-right > a:first-of-type {
+    padding-left: 30px;
+}
+
+.header-right > a:hover,
+.header-right > a:focus,
+.header-right > a:active {
+    opacity: 1;
+}
+
+/* Utilities
+******************************************/
+
+.text-center {
+    text-align: center;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+
+
+/* Media Queries
+*****************************************/
+@media (max-width: 420px) {
+    .header-left,
+    .header-right {
+        float: none;
+        text-align: center;
+    }
+
+    .header-right {
+        margin-top: 0;
+    }
+}
